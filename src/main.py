@@ -99,7 +99,7 @@ def main():
     
         # OPCIÓN 4: Salida del programa
         elif opcion == "4":
-            print("\n¡Sobres compa, nos vemos!")   # mensaje de despedida
+            print("\n¡Hasta la vista Bayby!")   # mensaje de despedida
             break   # rompemos el ciclo "while True" y programa termina
 
 
