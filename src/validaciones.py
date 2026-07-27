@@ -5,7 +5,7 @@ def validar_texto_no_vacio(mensaje):
         texto = input(mensaje).strip()
         if texto:  # Si el texto tiene algo
             return texto  # Devuelve el texto
-        print(" No puedes dejar este campo vacío.")
+        print(" intoduce un caracter válido. No puedes dejar este campo vacío.")
 
 
 def validar_numero_entero(mensaje):
