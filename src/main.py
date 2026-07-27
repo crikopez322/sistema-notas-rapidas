@@ -104,6 +104,9 @@ def main():
 
 
 # Esto mira que el archivo se esté ejecutando directamente y no usando otro archivo
-if __name__ == "__main__":
-    main()   
 # si se cumple la condición, arranca el programa llamando a la función principal
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n Programa interrumpido por el usuario. ¡Hasta luego!")
