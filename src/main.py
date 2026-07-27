@@ -22,7 +22,8 @@ def mostrar_menu():
     print("2. Ver todas las notas")                # opción 2
     print("3. Eliminar una nota")                  # opción 3
     print("4. Salir")                              # opción 4
-    print("=" * 35)                                # línea decorativa final
+    print("=" * 35)     
+   # línea decorativa final.
 
 
 def main():
@@ -47,7 +48,7 @@ def main():
             titulo = validar_texto_no_vacio("Título de la nota: ")     # pedimos el título y revisamos que no esté vacío
             contenido = validar_texto_no_vacio("Contenido de la nota: ")  # pedimos el contenido y revisamos que no esté vacío
 
-            notas = gestor.cargar_notas()   # trae todas las notas que ya existen guardadas
+            notas = gestor.cargar_notas()   # Trae todas las notas que ya existen guardadas
 
             # aquí sacamos el id más alto que exista y le sumamos 1, para que cada nota tenga un número distinto
             nuevo_id = max([n.id_nota for n in notas], default=0) + 1
@@ -64,7 +65,7 @@ def main():
             notas = gestor.cargar_notas()             # traemos todas las notas guardadas
 
             if not notas:
-                print("No hay notas guardadas todavía compa.")   # si la lista está vacía se avisa
+                print("No hay notas guardadas todavía mi rey.")   # si la lista está vacía se avisa
             else:
                 for n in notas:   #se ve una por una todas las notas guardadas
                     print(
@@ -99,7 +100,7 @@ def main():
     
         # OPCIÓN 4: Salida del programa
         elif opcion == "4":
-            print("\n¡Hasta la vista Bayby!")   # mensaje de despedida
+            print("\n¡Nos vemos luego!")   # mensaje de despedida
             break   # rompemos el ciclo "while True" y programa termina
 
 
@@ -109,4 +110,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n Programa interrumpido por el usuario. ¡Hasta luego!")
+        print("\n\n Has cerrado el programa, hasta luego xd")  # mensaje de despedida si se cierra con Ctrl+C

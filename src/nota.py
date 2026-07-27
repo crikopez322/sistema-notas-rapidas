@@ -2,19 +2,19 @@ import datetime  # para manejar fechas y horas
 class Nota:  # define la clase de la nota 
     def __init__(
         self, id_nota, titulo, contenido
-    ):  # constructor de la clase nota 
+    ):  # constructor de la clase nota.
         self.id_nota = (
-            id_nota  # asigna id de nota 
+            id_nota  # asigna id de nota. 
         )
         self.titulo = (
-            titulo  # gurada titulo de nota
+            titulo  # gurada titulo de nota.
         )
         self.contenido = (
-            contenido  # guarda contenido de nota
+            contenido  # guarda contenido de nota.
         )
         self.fecha = datetime.datetime.now().strftime(
             "%Y-%m-%d %H:%M"
-        )  # guarda fehca de creacion 
+        )  # guarda fehca de creacion. 
 
     def a_diccionario(
         self,
@@ -37,4 +37,4 @@ class Nota:  # define la clase de la nota
             "fecha"
         ]  
         return nota  
-#weyes si van a mover el codigo primero analizenlo y luego lo mueven xd
+#weyes si van a mover el codigo primero analizenlo y luego lo mueven xd, sino la regamos:v
