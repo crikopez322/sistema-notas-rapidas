@@ -16,7 +16,7 @@ from validaciones import (              # traemos funciones que revisan que lo q
 def mostrar_menu():
     # esta función solo imprime en pantalla las opciones del menú
     print("\n" + "=" * 35)                        # línea decorativa de arriba
-    print("      📝 SISTEMA DE NOTAS RÁPIDAS")     # título del programa
+    print(" 📝 SISTEMA DE NOTAS RÁPIDAS XD")     # título del programa
     print("=" * 35)                                # otra línea decorativa
     print("1. Crear nueva nota")                   # opción 1
     print("2. Ver todas las notas")                # opción 2
