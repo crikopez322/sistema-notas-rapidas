@@ -110,4 +110,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n Has cerrado el programa, hasta luego xd")  # mensaje de despedida si se cierra con Ctrl+C
+        print("\n\n Has cerrado el programa, hasta luego xd2")  # mensaje de despedida si se cierra con Ctrl+C
